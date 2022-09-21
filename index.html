@@ -12,10 +12,7 @@
     <meta data-react-helmet="true" property="og:image:width" content="1000" />
     <meta name="theme-color" content="#15171A" />
     <meta name="generator" content="Gatsby 4.15.2" />
-    <style
-      data-href="/styles.eb9084e6b78577717b0f.css"
-      data-identity="gatsby-global-css"
-    >
+    <style >
       * {
         direction: rtl;
       }
@@ -551,10 +548,11 @@
       .post-card {
         color: inherit;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: all ease-in-out 500ms;
+        border: 1px solid white;
       }
-      .post-card,
       .post-card:hover {
-        text-decoration: none;
+        border: 1px solid rgb(180, 180, 180);
       }
       .post-card-tags {
         color: var(--color-secondary);
@@ -849,37 +847,36 @@
       .kg-image-card.kg-width-wide + .kg-image-card.kg-width-wide {
         margin: -2.25em 0 3em;
       }
-    </style>
-    <style>
-      .gatsby-image-wrapper {
-        position: relative;
-        overflow: hidden;
+      .contact-us-section {
+        background-color: #e04c14;
+        background-size: contain;
+        background-image: url(./imgs/vllkyt2i4ng2hdgjag.jpg);
+        background-repeat: no-repeat;
+        padding: 8vw;
+        display: flex;
+        color: white;
+        margin-bottom: 4vw;
       }
-      .gatsby-image-wrapper picture.object-fit-polyfill {
-        position: static !important;
+      .contact-us-section .left {
+        order: 1;
+        flex: 1;
       }
-      .gatsby-image-wrapper img {
-        bottom: 0;
-        height: 100%;
-        left: 0;
-        margin: 0;
-        max-width: none;
-        padding: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 100%;
-        object-fit: cover;
+      .contact-us-section .right {
+        flex: 1;
       }
-      .gatsby-image-wrapper [data-main-image] {
-        opacity: 0;
-        transform: translateZ(0);
-        transition: opacity 0.25s linear;
-        will-change: opacity;
+      .contact-us-section .right h2 {
+        font-family: "Cairo";
+        font-size: 5rem;
+        margin: 0 0 20px 0;
       }
-      .gatsby-image-wrapper-constrained {
-        display: inline-block;
-        vertical-align: top;
+
+      .contact-us-section .right {
+        flex: 1;
+      }
+      @media (max-width: 980px) {
+        .contact-us-section {
+          background-image: none;
+        }
       }
       * {
         direction: rtl;
@@ -887,20 +884,12 @@
       body{
         font-family: "Lemonada";
       }
+      
     </style>
-    <noscript
-      ><style>
-        .gatsby-image-wrapper noscript [data-main-image] {
-          opacity: 1 !important;
-        }
-        .gatsby-image-wrapper [data-placeholder-image] {
-          opacity: 0 !important;
-        }
-      </style></noscript
-    >
+   
     <link
       rel="shortcut icon"
-      href="https://gatsby.ghost.org/icons/icon-48x48.png"
+      href="./imgs/logo.png"
     />
     <link href="https://fonts.googleapis.com/css?family=Lemonada&display=swap" rel="stylesheet"></link>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -948,8 +937,7 @@
                   </div>
                 </div>
                 <div class="site-banner">
-                  <h1 class="site-banner-title">
-                     
+                  <h1 class="site-banner-title"> 
                     <img
                     class="site-logo"
                     src="./imgs/logo.png"
@@ -967,6 +955,7 @@
                 </div>
               </div>
             </header>
+            
             <main class="site-main">
               <div class="container">
                 <section class="post-feed">
@@ -1048,15 +1037,21 @@
               <h2 class="post-card-title">موتورات مياة لكل الاستعمالات</h2>
             </header>
           </a>
-         
                 </section>
-                <nav class="pagination" role="navigation">
-                  <div></div>
-                  <div></div>
-                </nav>
               </div>
             </main>
           </div>
+          <div class="contact-us-section">
+            <div class="left"></div>
+            <div class="right">
+              <h2>تواصل معنا</h2>
+              <ul>
+                <li><span class="fa fa-map"></span>العنوان: تقاطع شارع الحرية مع الجمهورية</li>
+                <li><span class="fa fa-map"></span>هاتف: 249122222195+</li>
+              </ul>
+            </div>
+            </div>
+            </div>
           <div class="viewport-bottom">
             <footer class="site-foot">
               <div class="site-foot-nav container">
